@@ -4,7 +4,7 @@ export function Inicio(){
     return(
         <>
         <h1>Mi Web Principal</h1>
-        <Tiempo></Tiempo>
+        <p>Nota: Lo de Tiempo esta en la Pestaña de Tiempo y lo de la Divisa esta en la pagina de Divisa.</p>
         </>
     )
 }

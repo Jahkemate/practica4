@@ -3,6 +3,8 @@ import {Link, Route, Routes } from 'react-router'
 import { Inicio } from './Pages/Inicio'
 import { Productos } from './Pages/Productos'
 import { Tarjeta } from './components/Tarjeta' /* Para acceder a usuarios */
+import { Divisa } from './Pages/Divisa'
+import { Tiempo } from './components/Tiempo'
 
 function App() {
  
@@ -23,6 +25,7 @@ function App() {
         <Link className="nav-link" to={"/productos"}>Productos</Link>
         <Link className="nav-link" to={"/acercade"}>Acerca de</Link>
         <Link className="nav-link" to={"/tiempo"}>Tiempo</Link>
+        <Link className="nav-link" to={"/divisa"}>Divisa</Link>
       </div>
     </div>
   </div>
@@ -31,7 +34,9 @@ function App() {
     <Routes>
       <Route path='/' element={<Inicio/>}/>
       <Route path='/clientes' element={<Tarjeta/>}/>
+      <Route path='/tiempo' element={<Tiempo/>}/>
       <Route path='/productos' element={<Productos/>}/>
+      <Route path='/divisa' element={<Divisa/>}/>
     </Routes>
     </>
   )
